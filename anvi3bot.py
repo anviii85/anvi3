@@ -2,7 +2,11 @@ import streamlit as st
 from groq import Groq
 
 st.set_page_config("PragyanAI Content Generator", layout="wide")
-st.image("anvi.jpeg", width=180)
+st.image(
+    "https://i.pinimg.com/236x/3e/16/5b/3e165bff107705255cb55e69c3d42cdc.jpg",
+    width=200
+)
+
 st.title("📢 ANVIAI – Content Generator")
 
 client = Groq(api_key=st.secrets["GROQ_API_KEY"])
